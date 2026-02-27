@@ -33,8 +33,8 @@ export default function Login() {
 
       <div className="flex items-center justify-center w-full lg:w-1/2 bg-[#fefaf6] h-screen md:h-fit px-6 sm:px-10 py-12 sm:top-36 lg:py-0 md:absolute lg:left-1/2 lg:bg-transparent lg:pl-40 md:w-1/2 md:rounded-lg md:bg-opacity-90">
         <div className="max-w-md w-full z-20">
-          <span className="text-4xl font-semibold tracking-wider text-orange-500 mb-6 block">
-            AlgoMate
+          <span className="text-4xl font-semibold tracking-wider text-orange-500 mb-6 block font-mono">
+          {"<>AlgoMate"}
           </span>
           <h2 className="text-3xl font-bold  text-gray-900">Welcome back!</h2>
           <p className="text-sm text-gray-600 mb-8">

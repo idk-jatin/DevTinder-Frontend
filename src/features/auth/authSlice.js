@@ -12,7 +12,15 @@ const authSlice = createSlice({
         loading : false,
         error : null
     },
-    reducers: {},
+    reducers: {
+        updateUser: (state, action) => {
+            if (state.user) {
+                state.user = { ...state.user, ...action.payload };
+            } else {
+                state.user = action.payload;
+            }
+        }
+    },
     extraReducers: (builder)=>{
         builder
         .addCase(SignupThunk.pending,(state)=>{
@@ -57,4 +65,5 @@ const authSlice = createSlice({
     }
 })
 
+export const { updateUser } = authSlice.actions;
 export default authSlice.reducer;

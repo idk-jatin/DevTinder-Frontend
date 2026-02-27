@@ -29,7 +29,7 @@ export default function AuthForm({ fields, onSubmit, title, buttonText }) {
               )}
               <Input
                 id={name}
-                className={type === "password" ? "pr-10 placeholder:text-[1rem] text-xl" : "placeholder:text-[1rem] text-xl"}
+                className={type === "password" ? "pr-10 placeholder:text-[1rem] text-base" : "placeholder:text-[1rem] text-base"}
                 type={
                   type === "password"
                     ? showPassword
